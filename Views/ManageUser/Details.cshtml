@@ -1,0 +1,36 @@
+﻿@model BasicCRUD.Models.userinfo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>userinfo</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.userid)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.userid)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.fname)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.fname)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.lname)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.lname)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.userid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
